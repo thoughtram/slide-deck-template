@@ -131,6 +131,10 @@ img {
     text-align: left;
     background-size: 200px auto;
 
+    h1, h3 {
+      letter-spacing: 0;
+    }
+
     h1 {
       font-size: 2.5em;
       position: relative;

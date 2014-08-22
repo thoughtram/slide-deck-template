@@ -59,6 +59,8 @@ img {
 .reveal p {
   line-height: 1.4em;
   margin-bottom: 1em; }
+.reveal ul, .reveal ol {
+  margin-bottom: 1em; }
 .reveal li {
   margin-top: 0.8em; }
   .reveal li:first-child {
@@ -116,7 +118,8 @@ img {
     margin-top: 0.5em;
     font-size: 1.2em;
     text-indent: 0.1em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    line-height: 1.3em; }
 .reveal .sub-section-slide h2 {
   color: #fff;
   opacity: 0;

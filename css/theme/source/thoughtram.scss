@@ -272,6 +272,28 @@ img {
   }
 }
 
+.print-pdf {
+
+  .sub-section-slide {
+     h2 {
+       opacity: 1;
+     }
+  }
+
+  .reveal.none .slides section {
+    padding-top: 300px!important;
+
+    &.sub-section-slide {
+      padding-top: 350px!important;
+    }
+
+    &.image-slide, &.deck-slide {
+      padding-top: 0!important;
+    }
+  }
+}
+
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------

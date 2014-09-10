@@ -281,13 +281,13 @@ img {
   }
 
   .reveal.none .slides section {
-    padding-top: 300px!important;
+    // padding-top: 300px!important;
 
     &.sub-section-slide {
       padding-top: 350px!important;
     }
 
-    &.image-slide, &.deck-slide {
+    &.deck-slide {
       padding-top: 0!important;
     }
   }

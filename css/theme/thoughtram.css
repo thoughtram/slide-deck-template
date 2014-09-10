@@ -175,12 +175,10 @@ img {
 
 .print-pdf .sub-section-slide h2 {
   opacity: 1; }
-.print-pdf .reveal.none .slides section {
-  padding-top: 300px !important; }
-  .print-pdf .reveal.none .slides section.sub-section-slide {
-    padding-top: 350px !important; }
-  .print-pdf .reveal.none .slides section.image-slide, .print-pdf .reveal.none .slides section.deck-slide {
-    padding-top: 0 !important; }
+.print-pdf .reveal.none .slides section.sub-section-slide {
+  padding-top: 350px !important; }
+.print-pdf .reveal.none .slides section.deck-slide {
+  padding-top: 0 !important; }
 
 /*********************************************
  * GLOBAL STYLES

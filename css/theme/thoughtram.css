@@ -49,8 +49,7 @@ img {
   background-size: 1800px auto;
   background-position: 24em -26em; }
 .reveal h1, .reveal h2 {
-  font-weight: 800;
-  text-transform: uppercase !important; }
+  font-weight: 800; }
 .reveal h2 {
   margin-bottom: 0.8em !important;
   line-height: 1em !important; }
@@ -73,7 +72,7 @@ img {
   box-shadow: none;
   font-size: 0.7em; }
   .reveal pre code {
-    background: #f7f7f7;
+    background: #333;
     color: #3B7586;
     padding: 0.8em;
     max-height: none; }
@@ -88,6 +87,10 @@ img {
   width: 80%;
   font-weight: lighter;
   font-style: normal; }
+.reveal iframe {
+  width: 90%;
+  height: 8em;
+  border: 1px solid #ccc; }
 .reveal .thoughtram-slide img {
   opacity: 0.4; }
   .reveal .thoughtram-slide img:first-child {
@@ -100,7 +103,7 @@ img {
   .reveal .deck-slide h1, .reveal .deck-slide h3 {
     letter-spacing: 0; }
   .reveal .deck-slide h1 {
-    font-size: 2.5em;
+    font-size: 2.4em;
     position: relative;
     margin-top: 4em; }
     .reveal .deck-slide h1:before {
@@ -112,13 +115,12 @@ img {
       background-repeat: no-repeat;
       background-size: 180px auto;
       background-position: center;
-      top: -1.3em;
-      left: -1.1em; }
+      top: -1.4em;
+      left: -1.2em; }
   .reveal .deck-slide h3 {
     margin-top: 0.5em;
     font-size: 1.2em;
     text-indent: 0.1em;
-    text-transform: uppercase;
     line-height: 1.3em; }
 .reveal .sub-section-slide h2 {
   color: #fff;

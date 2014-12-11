@@ -69,6 +69,11 @@ img {
   h2 {
     margin-bottom: 0.8em!important;
     line-height: 1em!important;
+
+    code {
+      font-weight: normal;
+      background: transparent;
+    }
   }
 
   section {
@@ -104,7 +109,7 @@ img {
     box-shadow: none;
     font-size: 0.7em;
     code {
-      background: #333;
+      // background: #333;
       color: #3B7586;
       padding: 0.8em;
       max-height: none;
@@ -114,8 +119,17 @@ img {
       color: #B38335;
     }
 
+    .tag, .literal,
+    .apache .tag {
+      color: #3B7586;
+    }
+
+    .variable {
+      color: #666;
+    }
+
     .title {
-      color: #60B4DB;
+      color: #3B7586;
     }
   }
 

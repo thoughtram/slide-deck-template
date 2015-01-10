@@ -77,6 +77,8 @@ img {
     color: #3B7586; }
   .reveal pre .variable {
     color: #666; }
+  .reveal pre .string {
+    color: #B66666; }
   .reveal pre .title {
     color: #3B7586; }
 .reveal blockquote {

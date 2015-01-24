@@ -147,7 +147,7 @@ img {
 
   iframe {
     width: 90%;
-    height: 8em;
+    height: 5em;
     border: 1px solid #ccc;
   }
 
@@ -319,6 +319,44 @@ img {
     &.deck-slide {
       padding-top: 0!important;
     }
+  }
+}
+
+.tabs-list {
+
+  margin: 0!important;
+  padding: 0!important;
+  text-align: right!important;
+  width: 90%;
+
+  > li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 0.2em;
+
+    &.active {
+      button {
+        background: #123742;
+      }
+    }
+  }
+
+  button {
+    font-size: 0.6em;
+    background: #4D8799;
+    color: #fff;
+    border: 0;
+    padding: 0.2em 0.5em;
+    display: block;
+  }
+}
+
+.tab {
+  display: none;
+  margin-top: -0.35em!important;
+
+  &.active {
+    display: block;
   }
 }
 

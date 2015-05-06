@@ -47,6 +47,10 @@ img {
   -webkit-animation-timing-function: linear;
 }
 
+.window-background .present {
+  background-position-y: 0.5em;
+}
+
 .reveal {
 
   .slides > section {
@@ -60,7 +64,6 @@ img {
 
   h1, h2 {
       font-weight: 800;
-      text-transform: uppercase!important;
   }
 
   h1 small {
@@ -77,6 +80,11 @@ img {
   h2 {
     margin-bottom: 0.8em!important;
     line-height: 1em!important;
+
+    code {
+      font-weight: normal;
+      background: transparent;
+    }
   }
 
   section {
@@ -90,6 +98,10 @@ img {
     margin-bottom: 1em;
   }
 
+  ul, ol {
+    margin-bottom: 1em;
+  }
+
   li {
     margin-top: 0.8em;
 
@@ -98,11 +110,17 @@ img {
     }
   }
 
+  code {
+    background: #eee;
+    padding: 0.1em;
+    color: #3B7586;
+  }
+
   pre {
     box-shadow: none;
     font-size: 0.7em;
     code {
-      background: #f7f7f7;
+      // background: #333;
       color: #3B7586;
       padding: 0.8em;
       max-height: none;
@@ -112,8 +130,20 @@ img {
       color: #B38335;
     }
 
+    .tag, .literal,
+    .apache .tag {
+      color: #3B7586;
+    }
+
+    .variable {
+      color: #666;
+    }
+
+    .string {
+      color: #B66666;
+    }
     .title {
-      color: #60B4DB;
+      color: #3B7586;
     }
   }
 
@@ -124,6 +154,12 @@ img {
     width: 80%;
     font-weight: lighter;
     font-style: normal;
+  }
+
+  iframe {
+    width: 90%;
+    height: 5em;
+    border: 1px solid #ccc;
   }
 
   .thoughtram-slide {
@@ -147,7 +183,7 @@ img {
     }
 
     h1 {
-      font-size: 2.5em;
+      font-size: 2.4em;
       position: relative;
       margin-top: 4em;
 
@@ -160,8 +196,8 @@ img {
         background-repeat: no-repeat;
         background-size: 180px auto;
         background-position: center;
-        top: -1.3em;
-        left: -1.1em;
+        top: -1.4em;
+        left: -1.2em;
       }
     }
 
@@ -169,7 +205,8 @@ img {
       margin-top: 0.5em;
       font-size: 1.2em;
       text-indent: 0.1em;
-      text-transform: uppercase;
+      // text-transform: uppercase;
+      line-height: 1.3em;
     }
   }
 
@@ -267,6 +304,73 @@ img {
     height: 0.4em;
   }
 }
+
+.print-pdf {
+
+  .sub-section-slide {
+     h2 {
+       opacity: 1;
+     }
+  }
+
+  .statement-slide {
+    h3 {
+      opacity: 1;
+      text-align: center;
+    }
+  }
+
+  .reveal.none .slides section {
+    // padding-top: 300px!important;
+
+    &.sub-section-slide {
+      padding-top: 350px!important;
+    }
+
+    &.deck-slide {
+      padding-top: 0!important;
+    }
+  }
+}
+
+.tabs-list {
+
+  margin: 0!important;
+  padding: 0!important;
+  text-align: right!important;
+  width: 90%;
+
+  > li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 0.2em;
+
+    &.active {
+      button {
+        background: #123742;
+      }
+    }
+  }
+
+  button {
+    font-size: 0.6em;
+    background: #4D8799;
+    color: #fff;
+    border: 0;
+    padding: 0.2em 0.5em;
+    display: block;
+  }
+}
+
+.tab {
+  display: none;
+  margin-top: -0.35em!important;
+
+  &.active {
+    display: block;
+  }
+}
+
 
 // Theme template ------------------------------
 @import "../template/theme";

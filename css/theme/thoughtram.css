@@ -1,9 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600);
 /**
  * Default theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600);
 img {
   border: none !important;
   box-shadow: none !important; }
@@ -11,28 +11,20 @@ img {
 @-webkit-keyframes pulse_animation {
   0% {
     -webkit-transform: scale(1); }
-
   30% {
     -webkit-transform: scale(1); }
-
   40% {
     -webkit-transform: scale(1.05); }
-
   50% {
     -webkit-transform: scale(1); }
-
   60% {
     -webkit-transform: scale(1); }
-
   70% {
     -webkit-transform: scale(1.03); }
-
   80% {
     -webkit-transform: scale(1); }
-
   100% {
     -webkit-transform: scale(1); } }
-
 .pulse {
   -webkit-animation-name: 'pulse_animation';
   -webkit-animation-duration: 2300ms;
@@ -40,38 +32,55 @@ img {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear; }
 
+.window-background .present {
+  background-position-y: 0.5em; }
+
 .reveal .slides > section {
   padding: 0; }
 .reveal .slide-background[data-background-hash="0/img/thoughtram-polygons.pngnullnullnullnull"] {
   background-size: 1800px auto;
   background-position: 24em -26em; }
 .reveal h1, .reveal h2 {
-  font-weight: 800;
-  text-transform: uppercase !important; }
+  font-weight: 800; }
 .reveal h2 {
   margin-bottom: 0.8em !important;
   line-height: 1em !important; }
+  .reveal h2 code {
+    font-weight: normal;
+    background: transparent; }
 .reveal section img {
   background: none !important; }
 .reveal p {
   line-height: 1.4em;
   margin-bottom: 1em; }
+.reveal ul, .reveal ol {
+  margin-bottom: 1em; }
 .reveal li {
   margin-top: 0.8em; }
   .reveal li:first-child {
     margin-top: 0; }
+.reveal code {
+  background: #eee;
+  padding: 0.1em;
+  color: #3B7586; }
 .reveal pre {
   box-shadow: none;
   font-size: 0.7em; }
   .reveal pre code {
-    background: #f7f7f7;
     color: #3B7586;
     padding: 0.8em;
     max-height: none; }
   .reveal pre .keyword {
     color: #B38335; }
+  .reveal pre .tag, .reveal pre .literal,
+  .reveal pre .apache .tag {
+    color: #3B7586; }
+  .reveal pre .variable {
+    color: #666; }
+  .reveal pre .string {
+    color: #B66666; }
   .reveal pre .title {
-    color: #60B4DB; }
+    color: #3B7586; }
 .reveal blockquote {
   background: none;
   box-shadow: none;
@@ -79,6 +88,10 @@ img {
   width: 80%;
   font-weight: lighter;
   font-style: normal; }
+.reveal iframe {
+  width: 90%;
+  height: 5em;
+  border: 1px solid #ccc; }
 .reveal .thoughtram-slide img {
   opacity: 0.4; }
   .reveal .thoughtram-slide img:first-child {
@@ -88,8 +101,10 @@ img {
 .reveal .deck-slide {
   text-align: left;
   background-size: 200px auto; }
+  .reveal .deck-slide h1, .reveal .deck-slide h3 {
+    letter-spacing: 0; }
   .reveal .deck-slide h1 {
-    font-size: 2.5em;
+    font-size: 2.4em;
     position: relative;
     margin-top: 4em; }
     .reveal .deck-slide h1:before {
@@ -101,13 +116,13 @@ img {
       background-repeat: no-repeat;
       background-size: 180px auto;
       background-position: center;
-      top: -1.3em;
-      left: -1.1em; }
+      top: -1.4em;
+      left: -1.2em; }
   .reveal .deck-slide h3 {
     margin-top: 0.5em;
     font-size: 1.2em;
     text-indent: 0.1em;
-    text-transform: uppercase; }
+    line-height: 1.3em; }
 .reveal .sub-section-slide h2 {
   color: #fff;
   opacity: 0;
@@ -116,6 +131,8 @@ img {
 .reveal .sub-section-slide.present h2 {
   opacity: 1;
   transition-delay: 1s; }
+.reveal .image-slide h2 {
+  margin-bottom: 0 !important; }
 .reveal .about {
   display: inline-block;
   width: 450px; }
@@ -159,22 +176,57 @@ img {
 .reveal .progress {
   height: 0.4em; }
 
+.print-pdf .sub-section-slide h2 {
+  opacity: 1; }
+.print-pdf .statement-slide h3 {
+  opacity: 1;
+  text-align: center; }
+.print-pdf .reveal.none .slides section.sub-section-slide {
+  padding-top: 350px !important; }
+.print-pdf .reveal.none .slides section.deck-slide {
+  padding-top: 0 !important; }
+
+.tabs-list {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: right !important;
+  width: 90%; }
+  .tabs-list > li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 0.2em; }
+    .tabs-list > li.active button {
+      background: #123742; }
+  .tabs-list button {
+    font-size: 0.6em;
+    background: #4D8799;
+    color: #fff;
+    border: 0;
+    padding: 0.2em 0.5em;
+    display: block; }
+
+.tab {
+  display: none;
+  margin-top: -0.35em !important; }
+  .tab.active {
+    display: block; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: white;
-  background-color: white; }
+  background: #fff;
+  background-color: #fff; }
 
 .reveal {
   font-family: "Open Sans", sans-serif;
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;
-  color: black; }
+  color: #000; }
 
 ::selection {
-  color: white;
+  color: #fff;
   background: rgba(0, 0, 0, 0.99);
   text-shadow: none; }
 
@@ -188,7 +240,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: black;
+  color: #000;
   font-family: "Open Sans", sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
@@ -202,7 +254,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #4d8799;
+  color: #4D8799;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -225,7 +277,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid black;
+  border: 4px solid #000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
@@ -235,7 +287,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #4d8799;
+  border-color: #4D8799;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -243,19 +295,19 @@ body {
  *********************************************/
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #4d8799; }
+  border-right-color: #4D8799; }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #4d8799; }
+  border-left-color: #4D8799; }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #4d8799; }
+  border-bottom-color: #4D8799; }
 
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: #4d8799; }
+  border-top-color: #4D8799; }
 
 .reveal .controls div.navigate-left.enabled:hover {
   border-right-color: #89b5c3; }
@@ -276,7 +328,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #4d8799;
+  background: #4D8799;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -287,4 +339,6 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: #4d8799; }
+  color: #4D8799; }
+
+/*# sourceMappingURL=thoughtram.css.map */

@@ -889,6 +889,10 @@ var Reveal = (function(){
 		extend( event, properties );
 		dom.wrapper.dispatchEvent( event );
 
+		if( window.parent !== window.self ) {
+			window.parent.postMessage( JSON.stringify({ namespace: 'reveal', eventName: type, state: {indexv: indexv, indexh: indexh} }), '*' );
+		}
+
 	}
 
 	/**

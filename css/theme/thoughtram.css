@@ -25,6 +25,7 @@ img {
     -webkit-transform: scale(1); }
   100% {
     -webkit-transform: scale(1); } }
+
 .pulse {
   -webkit-animation-name: 'pulse_animation';
   -webkit-animation-duration: 2300ms;
@@ -37,11 +38,14 @@ img {
 
 .reveal .slides > section {
   padding: 0; }
+
 .reveal .slide-background[data-background-hash="0/img/thoughtram-polygons.pngnullnullnullnull"] {
   background-size: 1800px auto;
   background-position: 24em -26em; }
+
 .reveal h1, .reveal h2 {
-  font-weight: 800; }
+  font-weight: 800 !important; }
+
 .reveal h1 small {
   display: inline-block;
   font-size: .6em;
@@ -52,27 +56,35 @@ img {
   top: 0.9em;
   transform: rotate(-14deg);
   color: maroon; }
+
 .reveal h2 {
   margin-bottom: 0.8em !important;
   line-height: 1em !important; }
   .reveal h2 code {
     font-weight: normal;
     background: transparent; }
+
 .reveal section img {
   background: none !important; }
+
 .reveal p {
   line-height: 1.4em;
   margin-bottom: 1em; }
+
 .reveal ul, .reveal ol {
+  margin-top: 0.5em !important;
   margin-bottom: 1em; }
+
 .reveal li {
   margin-top: 0.8em; }
   .reveal li:first-child {
     margin-top: 0; }
+
 .reveal code {
   background: #eee;
   padding: 0.1em;
   color: #3B7586; }
+
 .reveal pre {
   box-shadow: none;
   font-size: 0.7em; }
@@ -91,6 +103,7 @@ img {
     color: #B66666; }
   .reveal pre .title {
     color: #3B7586; }
+
 .reveal blockquote {
   background: none;
   box-shadow: none;
@@ -98,23 +111,26 @@ img {
   width: 80%;
   font-weight: lighter;
   font-style: normal; }
+
 .reveal iframe {
   width: 90%;
   height: 5em;
   border: 1px solid #ccc; }
+
 .reveal .thoughtram-slide img {
   opacity: 0.4; }
   .reveal .thoughtram-slide img:first-child {
     display: block;
     margin-left: auto;
     margin-right: auto; }
+
 .reveal .deck-slide {
   text-align: left;
   background-size: 200px auto; }
   .reveal .deck-slide h1, .reveal .deck-slide h3 {
     letter-spacing: 0; }
   .reveal .deck-slide h1 {
-    font-size: 2.4em;
+    font-size: 2.2em;
     position: relative;
     margin-top: 4em; }
     .reveal .deck-slide h1:before {
@@ -133,16 +149,20 @@ img {
     font-size: 1.2em;
     text-indent: 0.1em;
     line-height: 1.3em; }
+
 .reveal .sub-section-slide h2 {
   color: #fff;
   opacity: 0;
   transition: opacity 1s ease;
   margin-bottom: 0 !important; }
+
 .reveal .sub-section-slide.present h2 {
   opacity: 1;
   transition-delay: 1s; }
+
 .reveal .image-slide h2 {
   margin-bottom: 0 !important; }
+
 .reveal .about {
   display: inline-block;
   width: 450px; }
@@ -159,14 +179,17 @@ img {
     font-size: 0.8em; }
   .reveal .about:first-child {
     margin-left: 0; }
+
 .reveal .about-thoughtram-slide img {
   width: 500px; }
+
 .reveal .drinks-and-food-slide h2 {
   display: inline-block;
   margin-top: 5em;
   margin-left: -4em;
   background: rgba(255, 255, 255, 0.5);
   padding: 0.5em; }
+
 .reveal .statement-slide h3 {
   color: #fff;
   text-align: left;
@@ -174,25 +197,31 @@ img {
   margin-top: 3em;
   opacity: 0;
   transition: opacity 1s ease; }
+
 .reveal .statement-slide.present h3 {
   opacity: 1;
   transition-delay: 1s; }
+
 .reveal .quotes-slide small {
   text-align: left;
   display: block;
   width: 70%;
   margin: 1.5em auto;
   font-size: .6em; }
+
 .reveal .progress {
   height: 0.4em; }
 
 .print-pdf .sub-section-slide h2 {
   opacity: 1; }
+
 .print-pdf .statement-slide h3 {
   opacity: 1;
   text-align: center; }
+
 .print-pdf .reveal.none .slides section.sub-section-slide {
   padding-top: 350px !important; }
+
 .print-pdf .reveal.none .slides section.deck-slide {
   padding-top: 0 !important; }
 
@@ -232,13 +261,17 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 36px;
   font-weight: normal;
-  letter-spacing: -0.02em;
   color: #000; }
 
 ::selection {
   color: #fff;
   background: rgba(0, 0, 0, 0.99);
   text-shadow: none; }
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit; }
 
 /*********************************************
  * HEADERS
@@ -252,27 +285,175 @@ body {
   margin: 0 0 20px 0;
   color: #000;
   font-family: "Open Sans", sans-serif;
-  line-height: 0.9em;
-  letter-spacing: 0.02em;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
   text-transform: none;
-  text-shadow: none; }
+  text-shadow: none;
+  word-wrap: break-word; }
 
 .reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+  font-size: 3.77em; }
+
+.reveal h2 {
+  font-size: 2.11em; }
+
+.reveal h3 {
+  font-size: 1.55em; }
+
+.reveal h4 {
+  font-size: 1em; }
+
+.reveal h1 {
+  text-shadow: none; }
+
+/*********************************************
+ * OTHER
+ *********************************************/
+.reveal p {
+  margin: 20px 0;
+  line-height: 1.3; }
+
+/* Ensure certain elements are never larger than the slide itself */
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%; }
+
+.reveal strong,
+.reveal b {
+  font-weight: bold; }
+
+.reveal em {
+  font-style: italic; }
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em; }
+
+.reveal ol {
+  list-style-type: decimal; }
+
+.reveal ul {
+  list-style-type: disc; }
+
+.reveal ul ul {
+  list-style-type: square; }
+
+.reveal ul ul ul {
+  list-style-type: circle; }
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px; }
+
+.reveal dt {
+  font-weight: bold; }
+
+.reveal dd {
+  margin-left: 40px; }
+
+.reveal q,
+.reveal blockquote {
+  quotes: none; }
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block; }
+
+.reveal q {
+  font-style: italic; }
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
+
+.reveal code {
+  font-family: monospace; }
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal; }
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.reveal table th {
+  font-weight: bold; }
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid; }
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center; }
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right; }
+
+.reveal table tr:last-child td {
+  border-bottom: none; }
+
+.reveal sup {
+  vertical-align: super; }
+
+.reveal sub {
+  vertical-align: sub; }
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top; }
+
+.reveal small * {
+  vertical-align: top; }
 
 /*********************************************
  * LINKS
  *********************************************/
-.reveal a:not(.image) {
+.reveal a {
   color: #4D8799;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
-  -ms-transition: color .15s ease;
-  -o-transition: color .15s ease;
   transition: color .15s ease; }
 
-.reveal a:not(.image):hover {
+.reveal a:hover {
   color: #89b5c3;
   text-shadow: none;
   border: none; }
@@ -288,12 +469,16 @@ body {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
   border: 4px solid #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -ms-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear; }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+
+.reveal section img.plain {
+  border: 0;
+  box-shadow: none; }
+
+.reveal a img {
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear; }
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
@@ -303,32 +488,32 @@ body {
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-.reveal .controls div.navigate-left,
-.reveal .controls div.navigate-left.enabled {
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
   border-right-color: #4D8799; }
 
-.reveal .controls div.navigate-right,
-.reveal .controls div.navigate-right.enabled {
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
   border-left-color: #4D8799; }
 
-.reveal .controls div.navigate-up,
-.reveal .controls div.navigate-up.enabled {
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
   border-bottom-color: #4D8799; }
 
-.reveal .controls div.navigate-down,
-.reveal .controls div.navigate-down.enabled {
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
   border-top-color: #4D8799; }
 
-.reveal .controls div.navigate-left.enabled:hover {
+.reveal .controls .navigate-left.enabled:hover {
   border-right-color: #89b5c3; }
 
-.reveal .controls div.navigate-right.enabled:hover {
+.reveal .controls .navigate-right.enabled:hover {
   border-left-color: #89b5c3; }
 
-.reveal .controls div.navigate-up.enabled:hover {
+.reveal .controls .navigate-up.enabled:hover {
   border-bottom-color: #89b5c3; }
 
-.reveal .controls div.navigate-down.enabled:hover {
+.reveal .controls .navigate-down.enabled:hover {
   border-top-color: #89b5c3; }
 
 /*********************************************
@@ -341,14 +526,4 @@ body {
   background: #4D8799;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
-
-/*********************************************
- * SLIDE NUMBER
- *********************************************/
-.reveal .slide-number {
-  color: #4D8799; }
-
-/*# sourceMappingURL=thoughtram.css.map */

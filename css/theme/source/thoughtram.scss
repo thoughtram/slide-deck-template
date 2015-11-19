@@ -57,7 +57,7 @@ img {
     padding: 0;
   }
 
-  .slide-background[data-background-hash="0/img/thoughtram-polygons.pngnullnullnullnull"] {
+  .slide-background[data-background-hash="0/img/thoughtram-polygons.pngnullnullnullnullnullnull"] {
     background-size: 1800px auto;
     background-position: 24em -26em;
   }
@@ -119,12 +119,12 @@ img {
   }
 
   pre {
-    box-shadow: none;
-    font-size: 0.7em;
+    box-shadow: none!important;
+    font-size: 0.7em!important;
     code {
       // background: #333;
       color: #3B7586;
-      padding: 0.8em;
+      padding: 0.8em!important;
       max-height: none;
     }
 

@@ -87,11 +87,12 @@ img {
 
 .reveal pre {
   box-shadow: none !important;
-  font-size: 0.7em !important; }
+  font-size: 0.7em !important;
+  word-wrap: normal !important; }
   .reveal pre code {
     color: #3B7586;
     padding: 0.8em !important;
-    max-height: none; }
+    max-height: none !important; }
   .reveal pre .keyword {
     color: #B38335; }
   .reveal pre .tag, .reveal pre .literal,

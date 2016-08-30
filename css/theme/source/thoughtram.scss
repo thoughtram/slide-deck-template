@@ -285,11 +285,20 @@ img {
       transition: opacity 1s ease;
     }
 
-    &.present h3 {
-      opacity: 1;
-      transition-delay: 1s;
+    &.present {
+      h3, p {
+        opacity: 1;
+        transition-delay: 1s;
+      }
     }
 
+    p {
+      color: #fff;
+      text-align: left;
+      margin-left: -3em;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
   }
 
   .quotes-slide {

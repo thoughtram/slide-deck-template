@@ -199,9 +199,16 @@ img {
   opacity: 0;
   transition: opacity 1s ease; }
 
-.reveal .statement-slide.present h3 {
+.reveal .statement-slide.present h3, .reveal .statement-slide.present p {
   opacity: 1;
   transition-delay: 1s; }
+
+.reveal .statement-slide p {
+  color: #fff;
+  text-align: left;
+  margin-left: -3em;
+  opacity: 0;
+  transition: opacity 1s ease; }
 
 .reveal .quotes-slide small {
   text-align: left;

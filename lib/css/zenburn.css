@@ -21,7 +21,7 @@ based on dark.css by Ivan Sagalaev
 .hljs-request,
 .hljs-status,
 .clojure .hljs-attribute {
-  color: #e3ceab;
+  color: #795549;
 }
 
 .django .hljs-template_tag,
@@ -66,8 +66,8 @@ based on dark.css by Ivan Sagalaev
 .apache .hljs-tag,
 .nginx .hljs-built_in,
 .tex .hljs-command,
-.hljs-prompt {
-  color: #efef8f;
+.hljs-prompt, .hljs-variable {
+  color: #795549;
 }
 
 .dos .hljs-winutils,
